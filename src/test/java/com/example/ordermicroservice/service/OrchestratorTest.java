@@ -90,7 +90,7 @@ public class OrchestratorTest {
         // Arrange
         when(inventoryService.checkInventory("PROD123", 2)).thenReturn(true);
         when(paymentService.processPayment(any(Payment.class))).thenReturn(true);
-        doNothing().when(orderService).createOrder(order);
+        //doNothing().when(orderService).createOrder(order);
         doNothing().when(inventoryService).updateInventory("PROD123", 2);
 
         // Act
